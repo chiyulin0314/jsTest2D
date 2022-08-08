@@ -15,7 +15,9 @@ cc.Class({
 
     start() {
         setTimeout(()=>{
-            this.node.destroy();
+            if(this.node != null){
+                this.node.destroy();
+            }
         }, this.second*1000);
     },
 
